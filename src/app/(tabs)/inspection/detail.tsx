@@ -1,9 +1,9 @@
 import { Text, View } from 'react-native';
 
-export default function page1() {
+export default function Detail() {
     return (
         <View>
-            <Text>Stack 1</Text>
+            <Text>Detail</Text>
         </View>
     );
 }
