@@ -1,3 +1,4 @@
+import { Inter_400Regular, Inter_600SemiBold, Inter_700Bold, Inter_900Black } from '@expo-google-fonts/inter';
 import { Lobster_400Regular, useFonts } from '@expo-google-fonts/lobster';
 import { Feather } from '@expo/vector-icons';
 import { ThemeProvider, createTheme } from '@rneui/themed';
@@ -9,6 +10,10 @@ import { THEME } from '../../styles/theme';
 export default function TabRoutesLayout() {
     let [fontsLoaded, fontError] = useFonts({
         Lobster_400Regular,
+        Inter_400Regular,
+        Inter_600SemiBold,
+        Inter_700Bold,
+        Inter_900Black
     });
 
     if (!fontsLoaded && !fontError) {

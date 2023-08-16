@@ -17,13 +17,20 @@ export default function Home() {
             </View>
             <View style={styles.main}>
                 <View style={styles.dashboard}>
+                    <Text style={styles.dashboard_header_text}>Dashboard</Text>
                     <View style={styles.dashboard_card}>
                         <Text style={styles.text}>Total 1</Text>
                         <Text style={styles.text}>Total 1</Text>
                         <Text style={styles.text}>Total 1</Text>
                     </View>
 
-                    <View style={styles.dashboard_card}>
+                    <View style={styles.dashboard_card_2}>
+                        <Text style={styles.text}>Total 2</Text>
+                        <Text style={styles.text}>Total 2</Text>
+                        <Text style={styles.text}>Total 2</Text>
+                    </View>
+
+                    <View style={styles.dashboard_card_2}>
                         <Text style={styles.text}>Total 2</Text>
                         <Text style={styles.text}>Total 2</Text>
                         <Text style={styles.text}>Total 2</Text>
@@ -77,13 +84,32 @@ const styles = StyleSheet.create({
     dashboard: {
         width: '100%',
         alignItems: 'center',
+        marginTop: 6,
+        justifyContent: 'space-between',
         flexDirection: 'row',
-        gap: 8
+        flexWrap: 'wrap',
+        backgroundColor: THEME.COLORS.BACKGROUND_1,
+        borderRadius: THEME.RADIUS.MD,
+    },
+    dashboard_header_text: {
+        width: '100%',
+        textAlign: 'left',
+        fontSize: THEME.FONT_SIZE.LG,
+        marginBottom: 20,
+        color: THEME.COLORS.NEUTRAL_2,
+        fontFamily: THEME.FONT_FAMILY.BOLD,
+        paddingLeft: THEME.SPACING.PADDING,
     },
     dashboard_card: {
         backgroundColor: THEME.COLORS.PRIMARY,
         borderRadius: THEME.RADIUS.MD,
-        flex: 1,
+        width: '47%',
+        padding: THEME.SPACING.PADDING
+    },
+    dashboard_card_2: {
+        backgroundColor: THEME.COLORS.BACKGROUND_1,
+        borderRadius: THEME.RADIUS.MD,
+        width: '47%',
         padding: THEME.SPACING.PADDING
     },
 });
