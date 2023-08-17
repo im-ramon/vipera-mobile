@@ -54,14 +54,14 @@ export default function TabRoutesLayout() {
                             marginHorizontal: 4
                         }
                     }} >
-
                     <Tabs.Screen
-                        name="settings"
+                        name="inspection"
                         options={{
-                            title: "Configurações",
-                            tabBarIcon: (a) => <Feather name="settings" size={24} color={THEME.COLORS.NEUTRAL_1} />
+                            title: "Inspeções",
+                            tabBarIcon: () => <Feather name="search" size={24} color={THEME.COLORS.NEUTRAL_1} />
                         }}
                     />
+
                     <Tabs.Screen
                         name="index"
                         options={{
@@ -71,10 +71,10 @@ export default function TabRoutesLayout() {
                     />
 
                     <Tabs.Screen
-                        name="inspection"
+                        name="settings"
                         options={{
-                            title: "Inspeções",
-                            tabBarIcon: () => <Feather name="search" size={24} color={THEME.COLORS.NEUTRAL_1} />
+                            title: "Configurações",
+                            tabBarIcon: (a) => <Feather name="settings" size={24} color={THEME.COLORS.NEUTRAL_1} />
                         }}
                     />
                 </Tabs>

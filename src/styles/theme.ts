@@ -44,7 +44,12 @@ export const THEME = {
         XXL: 48,
     },
     SPACING: {
-        MARGIN: 16,
-        PADDING: 12
+        XSM: 8,
+        SM: 12,
+        MD: 16,
+        LG: 18,
+        XL: 24,
+        XXL: 32,
+        XXXL: 48,
     }
 }
